@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   */
+   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+body, html{
+    padding: 0;
+   
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+
+}
+body {
+    overflow-x: hidden;
+  }
+  
+/* .scroll-watcher{
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: greenyellow;
+    animation: scroll-watcher linear;
+    scale: 0 1;
+    transform-origin: left;
+    animation-timeline: scroll();
+
+}
+@keyframes scroll-watcher{
+ to {scale: 1 1}
+} */
+.container{
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    width: 100%;
+    height: 900px;
+    /* position: fixed; */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-size:cover;
+    color: white;
+    background-image:url(SkillsLogo/background-4.jpg);
+    
+    position: fixed;
+    z-index: 0;
+
+}
+
+ .intro{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 500px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-left: 250px;
+    font-size: 20px;
+    font-family: Monaco (monospace);
+    z-index: 1;
+}
+.intro h1{
+    font-family: Gill Sans (sans-serif);
+    z-index: 1;
+}
+.contenttt{
+    padding-top: 100px;
+    background-color: blueviolet;
+    width: 100%;
+    height: 770px;
+    z-index: 1;
+    display:flex;
+    justify-content: space-between;
+}
+.name{
+    width: 100%;
+padding: 160px;
+color: white;
+padding-left: 200px;
+z-index: 1;
+}
+.name p{
+    font-size: 45px;
+    gap: 4px;
+}
+.img-developer{
+    z-index: 1;
+    padding-right: 170px;
+    padding-top: 140px;
+}
+.img-developer img{
+ width: 300px;
+}
+ .photo{
+    width: 300px;
+}
+.gradient{
+    margin-top: -50px;
+    width: 100%;
+    height: 40px;
+    background: rgb(79,23,135);
+    background: linear-gradient(180deg, rgb(40, 1, 79) 0%, rgba(0,0,0,1) 100%);
+}
+.photo img{
+    width: 300px;
+    padding-top: 100px;
+    margin-left: -200px;
+}
+.intro-heading{
+    /* margin-top: 50px; */
+    padding-left: 500px;
+    margin-bottom: 30px;
+    animation: interior linear forwards;
+   /* transform-origin: left; */
+   animation-timeline: view(30px);
+   animation-range-start: cover;
+   animation-range-end: 700px;
+   color: white;
+}
+.interior{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+.interior img{
+    scale: .4; 
+    opacity: 1;
+   width: 200px;
+   margin-top: 20px;
+   /* height: 300px; */
+   animation: interior linear forwards;
+   /* transform-origin: left; */
+   animation-timeline: view(30px);
+   animation-range-start: cover;
+   animation-range-end: 700px;
+   /* padding-left: 80px; */
+
+}
+@keyframes interior{
+    
+    to{scale:  1.2; opacity: 1;}
+}
+.interior p{
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    animation: interior-para linear forwards;
+    animation-timeline: view(300px);
+    opacity: 0; scale: .8;
+    font-size: 20px;
+}
+.details{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    
+}
+.details p{
+    padding-top: 10px;
+    color: white;
+    font-weight: 200;
+    
+}
+@keyframes interior-para{
+    to{opacity: 1; scale: 1;}
+}
+
+.introduction{
+    height: 600px;
+    margin-top: 100px;
+    color: rgb(252, 249, 249);
+    padding-top: 150px;
+    padding-left: 300px;
+    width: 100%;
+    /* margin-left: 300px; */
+    margin-left: 0;
+    
+}
+.introduction h2{
+    margin-left: 100px;
+    padding-left: 100px;
+    animation: interior linear forwards;
+    transform-origin: left;
+    animation-timeline: view(30px);
+    animation-range-start: cover;
+    animation-range-end: 700px;
+
+}
+.introduction p{
+    padding-left: 100px;
+    font-weight:300;
+    font-style: italic;
+    animation: interior linear forwards;
+    transform-origin: left;
+    animation-timeline: view(30px);
+    animation-range-start: cover;
+    animation-range-end: 700px;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    overflow-x: scroll;
+    /* background-color: white; */
+    gap: 5px;
+    scrollbar-width: none;
+    z-index: 1;
+  
+}
+#h1{
+    color: white;
+    animation: scrolling infinite alternate-reverse 5s;
+    margin-left: 500px;
+}
+.card1{
+    width: 300px;
+    height: 300px;
+    /* background-color: white; */
+    padding: 50px;
+    animation: scrolling infinite alternate-reverse 5s;
+    border-radius: 8px;
+    z-index: 1;
+   
+    
+}
+.card1 img:hover{
+    width: 250px;
+    transition: .7s ease;
+}
+@keyframes scrolling{
+    to{transform: translate(calc(-50% - 0.5rem));}
+}
+.card1 img{
+    width: 200px;
+}
+.card1 p{
+    color: rgb(17, 16, 16);
+}
+
+.features{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    margin-top: 100px;
+    margin-bottom: 400px;
+    position: relative;
+    z-index: 1;
+}
+/* .features h3{
+    margin-left: 300px;
+} */
+ #project{
+   color: white;
+   margin-left:600px;
+   margin-top: 150px;
+   /* position: relative; */
+   animation: interior-para linear forwards;
+    animation-timeline: view(300px);
+    opacity: 0; scale: .8;
+ 
+
+ }
+.insidee{
+    /* animation: insidee  ease-in;
+    animation-timeline: view();
+    opacity: 0;
+    animation-timing-function: ease; */
+    /* background-color: transparent; */
+    width:500px ;
+    height: 500px;
+    /* background-color: antiquewhite; */
+    /* transition: background-color 0.9s ease; */
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    z-index: 1;
+    border: 2px solid white;
+    margin-left: 100px;
+}
+.insidee:hover{
+    width: 600px;
+    /* height: 600px; */
+    /* transition:  ease-out; */
+    box-shadow: 0 0 5px 3px violet
+}
+.insidee p{
+    line-height: 30px;
+    color: white;
+    margin-left: 30px;
+   font-style: italic;
+}
+
+.insidee img{
+    width: 300px;
+    z-index: 1;
+    margin-left: 120px;
+}
+.insidee button{
+    cursor: pointer;
+    background-color: violet;
+    height: 30px;
+}
+
+/* .inside-content{
+    background-color: aqua;
+   margin-left: 30px;
+   position: absolute;
+   top: 10px;
+   height: 200px;
+   margin-left: 600px;
+} */
+
+
+/* @keyframes insidee{
+    from{scale: .4; }
+    to{ scale: 1; opacity: 1;}
+     from{width: 400px;}
+    to{width: 600px; opacity: 1;} 
+}  */
+.insidee.car{
+   width: 600px; 
+   opacity: 1;
+   /* transition: opacity 4s ease;  */
+   transform: translateY(0);
+   transition-delay: 0.5s;
+}
+
+.navbar h1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    z-index: 1;
+;
+}
+.navbar{
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    padding-top: 10px;
+    padding-left: 70px;
+    position: fixed;
+    font-family: "Gill Sans", sans-serif; ;
+    z-index: 2;
+    cursor: pointer;
+    color: violet;
+    text-decoration:overline;
+}
+.navbar.scrolled{
+    background-color: rgb(23, 26, 26);
+    color: rgb(56, 205, 33);
+    background-color: rgb(14, 10, 14);
+}
+.resume{
+    color: white;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding-left: 400px;
+    margin-bottom: 200px;
+}
+
+.resume-size:hover{
+font-size:33px ;
+transition: ease .5s;
+text-decoration: overline;
+}
+.resume-size{
+    font-size: 30px;
+    text-decoration:none;
+}
+.resume p{
+    font-size: 30px;
+    padding-left: 200px;
+    
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1024px){
+  
+    .name p{
+font-size: 29px;
+    }
+    .img-developer img{
+        width: 200px;
+    }
+    .interior p{
+    font-size: 17px;
+    margin-left: 100px;
+    }
+    .interior img{
+        width: 150px;
+    }
+    .introduction{
+        padding: 20px;
+        margin-top: 200px;
+        height: 500px;
+    }
+    .card1{
+        width: 200px;
+        
+    }
+    .card1 img{
+        width: 150px;
+    }
+    .cards{
+        gap: 30px;
+    }
+    .insidee{
+      width: 320px;
+      height: 370px;
+      margin-left: 25px;
+    }
+    .insidee p{
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .insidee img{
+        width: 200px;
+    }
+    .features{
+        gap: 2px;
+        margin-left: 1px;
+    }
+    .resume{
+        padding-left: 222px;
+        margin-bottom: 200px;
+    }
+
+}
+
+@media  (max-width: 601px){
+    .name p{
+        font-size: 20px;
+
+    }
+    .name{
+        width: 100%;
+       padding-left: 1px;
+        background-color: red;
+    }
+    
+}
