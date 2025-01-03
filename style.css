@@ -131,7 +131,8 @@ z-index: 1;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    padding-left: 200px;
 }
 .interior img{
     scale: .4; 
@@ -153,24 +154,25 @@ z-index: 1;
 }
 .interior p{
     color: rgb(0, 0, 0);
-    padding-top: 100px;
+    /* padding-top: 100px; */
     animation: interior-para linear forwards;
     animation-timeline: view(300px);
     opacity: 0; scale: .8;
     font-size: 20px;
 }
 .details{
-    /* background-color: aquamarine; */
+    margin-top: 35px;
     display: flex;
-    flex-direction: column;
-    margin-right: 400px;
-    
+    flex-direction: row;
+    margin-right: 300px;
+    column-count: 2;
+gap: 40px;
 }
 .details p{
-    padding-top: 10px;
+    /* padding-top: 100; */
+    margin-top: 0px;
     color: white;
     font-weight: 200;
-    
 }
 @keyframes interior-para{
     to{opacity: 1; scale: 1;}
