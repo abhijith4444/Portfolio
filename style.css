@@ -373,7 +373,7 @@ gap: 40px;
     width: 100%;
     height: 200px;
     position: relative;
-    padding-left: 400px;
+    padding-left: 500px;
     margin-bottom: 200px;
 }
 
@@ -397,19 +397,25 @@ text-decoration: overline;
 /* Responsive */
 
 @media (max-width: 1024px){
-  
+    .container{
+        padding-left: 16px;
+    }
     .name p{
 font-size: 29px;
     }
     .img-developer img{
         width: 200px;
     }
+  
     .interior p{
     font-size: 17px;
     margin-left: 100px;
     }
     .interior img{
         width: 150px;
+    }
+    .details{
+        margin-right: 0;
     }
     .introduction{
         padding: 20px;
@@ -429,7 +435,7 @@ font-size: 29px;
     .insidee{
       width: 320px;
       height: 370px;
-      margin-left: 25px;
+      padding-left: 25px;
     }
     .insidee p{
         line-height: 20px;
@@ -450,14 +456,95 @@ font-size: 29px;
 }
 
 @media  (max-width: 601px){
-    .name p{
-        font-size: 20px;
-
+   .content{
+    width: 100%;
+   }
+   .name p{
+    font-size: 35px;
+    width: 700px;
+   }
+   .details{
+    margin-right: 00px;
+    padding-left: 0;
+   }
+    .interior{
+        padding-left: 100px;
+    
     }
-    .name{
-        width: 100%;
-       padding-left: 1px;
-        background-color: red;
+    .intro-heading{
+        padding-left: 400px;
+    }
+    .column1{
+        width: 300px;
+        
+    }
+    #h1{
+       
+        margin-left: 0px;
+      width: 700px;
+       padding-left: 400px;
+    }
+    .cards{
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 900px;
+    gap: 0px;
+    }
+    #project{
+        margin-left: 0px;
+        padding-left: 400px;
+    }
+    .insidee img{
+        margin-left: 60px;
+    }
+    .insidee p{
+       width: 300px;
+    }
+    .resume{
+        width: 900px;
+        padding-left: 200px;
+        margin-right: 0;
+    }
+    .resume-size{
+        font-size: 25px;
+    }
+   
+}
+
+
+/* responsive mobile screen */
+@media(max-width:320px){
+    .contenttt{
+        gap: 200px;
+    }
+    .interior img{
+        width: 170px;
+        height: 170px;
+    }
+    .intro-heading{
+        width: 700px;
+    }
+    .introduction{
+        width: 900px;
+    }
+    .features{
+        flex-direction: column;
+        gap: 90px;
+        width: 900px;
+    }
+    .insidee{
+        margin-left: 200px;
+        padding-bottom: 50px;
+    }
+    .insidee p{
+        width: 500px;
+    }
+    .insidee img{
+        margin-left: 140px;
+    }
+    .resume{
+        margin-top: 700px;
+        margin-left: 30px;
     }
     
 }
