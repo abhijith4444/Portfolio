@@ -210,6 +210,9 @@ gap: 40px;
     animation-range-end: 700px;
     
 }
+#words-highlight{
+    color: rgb(255, 255, 0);
+}
 .cards{
     display: flex;
     flex-direction: row;
@@ -361,7 +364,7 @@ gap: 40px;
     z-index: 2;
     cursor: pointer;
     color: violet;
-    text-decoration:overline;
+    text-decoration:underline;
 }
 .navbar.scrolled{
     background-color: rgb(23, 26, 26);
@@ -514,6 +517,42 @@ font-size: 29px;
 
 /* responsive mobile screen */
 @media(max-width:320px){
+    .contenttt{
+        gap: 200px;
+    }
+    .interior img{
+        width: 170px;
+        height: 170px;
+    }
+    .intro-heading{
+        width: 700px;
+    }
+    .introduction{
+        width: 900px;
+    }
+    .features{
+        flex-direction: column;
+        gap: 90px;
+        width: 900px;
+    }
+    .insidee{
+        margin-left: 200px;
+        padding-bottom: 50px;
+    }
+    .insidee p{
+        width: 500px;
+    }
+    .insidee img{
+        margin-left: 140px;
+    }
+    .resume{
+        margin-top: 700px;
+        margin-left: 30px;
+    }
+    
+}
+
+@media (max-width: 380px){
     .contenttt{
         gap: 200px;
     }
